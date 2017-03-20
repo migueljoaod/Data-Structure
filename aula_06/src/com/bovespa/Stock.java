@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Stock {
-
-private String code;
+	
+	private String code;
 	
 	private LocalDate date;
 	
@@ -65,4 +65,5 @@ private String code;
 		this.minPrice = minPrice;
 	}
 	
+
 }
