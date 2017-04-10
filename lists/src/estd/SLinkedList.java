@@ -5,12 +5,42 @@ public class SLinkedList<T>{
 	
 	private Node<T> last;
 	
-	public long getSize(){
-		return 0;
+	public Node<T> getFirst() {
+		return first;
+	}
+
+	public Node<T> getLast() {
+		return last;
+	}
+
+
+
+	private long size = 0;
+	
+	public void removeFirst(){
+		if(!isEmpty()){
+			
+			first = first.getNext();
+			size--;
+			if (isEmpty()) {
+				last = first;
+			}
+			
+		}
 	}
 	
+	public long getSize(){
+		return size;
+	}
+	
+	public boolean isEmpty(){
+		return size == 0;
+	}
+	
+	
+	
 	public void add(Node<T> node){
-		if (first == null) {
+		if (isEmpty()) {
 			first = node;
 			last = node;
 		} else {
@@ -18,8 +48,8 @@ public class SLinkedList<T>{
 			last = node;
 			
 		}
-		
-		
-		
+	size++;	
 	}
+	
+	
 }
