@@ -1,17 +1,19 @@
 package estd;
 
 public class Aula {
-	public String inverter(String s){
+
+	public String invert(String s) {
 		char[] chars = s.toCharArray();
 		char[] chars2 = new char[chars.length];
-		
-		int count = (chars.length - 1);
+
+		int counter = chars.length -1;
 		
 		for (char c : chars) {
-			System.out.println(c);
-			chars2[count] = c;
-			count--;
+			chars2[counter] = c;
+			counter--;
 		}
-		return new String(chars2);
+
+		return new String (chars2);
 	}
+
 }

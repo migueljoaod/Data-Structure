@@ -1,4 +1,4 @@
-package estd;
+package q1;
 
 public class Node<T> {
 
